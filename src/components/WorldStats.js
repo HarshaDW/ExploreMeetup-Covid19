@@ -93,7 +93,7 @@ function Cases({ selectedCountry }) {
                 Total Recovered
         </Typography>
               <Typography variant="h5" component="h2">
-                {apiData.results ? apiData.results[0].total_deaths : ''}
+                {apiData.results ? apiData.results[0].total_recovered : ''}
               </Typography>
             </CardContent>
           </Card>
