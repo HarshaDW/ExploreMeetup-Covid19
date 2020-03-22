@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Routes from './components/utils/Routes';
+import App from './App';
 
 ReactDOM.render(
   <Router>
-    <div className="App">
-      <Routes />
-    </div>
+
+      <App/>
+
   </Router>, document.getElementById('root'));
 
 serviceWorker.unregister();
