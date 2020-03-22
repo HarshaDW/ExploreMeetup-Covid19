@@ -16,7 +16,6 @@ const useStyles = makeStyles(theme => ({
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 export default function WorldMap({selectedCountry}) {
-  debugger
   const classes = useStyles();
   return (
     <div>
