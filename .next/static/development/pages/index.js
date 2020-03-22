@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/worldStats.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
 /***/ "./components/Cases.js":
 /*!*****************************!*\
@@ -192,6 +192,130 @@ function Header() {
 
 /***/ }),
 
+/***/ "./components/SelectCountry.js":
+/*!*************************************!*\
+  !*** ./components/SelectCountry.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Dropdown; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/InputLabel */ "./node_modules/@material-ui/core/esm/InputLabel/index.js");
+/* harmony import */ var _material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/MenuItem */ "./node_modules/@material-ui/core/esm/MenuItem/index.js");
+/* harmony import */ var _material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/FormControl */ "./node_modules/@material-ui/core/esm/FormControl/index.js");
+/* harmony import */ var _material_ui_core_Select__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Select */ "./node_modules/@material-ui/core/esm/Select/index.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
+/* harmony import */ var _Cases__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Cases */ "./components/Cases.js");
+/* harmony import */ var _WorldMap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./WorldMap */ "./components/WorldMap.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/index.js");
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+
+
+
+
+
+var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(function (theme) {
+  return {
+    formControl: {
+      margin: theme.spacing(1),
+      minWidth: 120,
+      width: '100%',
+      padding: (0, 2, 0, 2)
+    },
+    selectEmpty: {
+      marginTop: theme.spacing(2)
+    },
+    dropdown: {
+      margin: theme.spacing(6)
+    },
+    paper: {
+      padding: theme.spacing(2),
+      textAlign: 'center',
+      color: theme.palette.text.secondary,
+      height: '500px'
+    }
+  };
+});
+function Dropdown() {
+  var classes = useStyles();
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('LK'),
+      country = _useState[0],
+      setCountry = _useState[1];
+
+  var handleChange = function handleChange(event) {
+    event.preventDefault();
+    setCountry(event.target.value);
+  };
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_Header__WEBPACK_IMPORTED_MODULE_10__["default"], null), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    container: true,
+    spacing: 1
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    item: true,
+    xs: 6
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    className: classes.paper
+  }, __jsx(_WorldMap__WEBPACK_IMPORTED_MODULE_9__["default"], null))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    item: true,
+    xs: 6
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    className: classes.paper
+  }, __jsx("div", null, __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    container: true,
+    spacing: 1
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    item: true,
+    xs: 6
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
+    variant: "h4"
+  }, " By Country"), __jsx(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: classes.formControl
+  }, __jsx(_material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    id: "demo-simple-select-label"
+  }, "Country"), __jsx(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    labelId: "demo-simple-select-label",
+    id: "demo-simple-select",
+    defaultValue: "LK",
+    value: country,
+    onChange: handleChange
+  }, __jsx(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    value: 'LK'
+  }, "LK"), __jsx(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    value: 'US'
+  }, "USA"), __jsx(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    value: 'IT'
+  }, "ITALY"), __jsx(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    value: 'FR'
+  }, "FRANCE")))))), __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    container: true,
+    spacing: 1
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    item: true,
+    xs: 12
+  }, __jsx(_Cases__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    selectedCountry: country
+  })), __jsx(_WorldMap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    selectedCountry: country
+  }))))))));
+}
+
+/***/ }),
+
 /***/ "./components/WorldMap.js":
 /*!********************************!*\
   !*** ./components/WorldMap.js ***!
@@ -261,82 +385,6 @@ function WorldMap(_ref) {
     alignmentBaseline: "middle",
     fill: "#F53"
   }, selectedCountry ? selectedCountry.toString() : 'France'))));
-}
-
-/***/ }),
-
-/***/ "./components/WorldStats.js":
-/*!**********************************!*\
-  !*** ./components/WorldStats.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return WorldStats; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _Cases__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Cases */ "./components/Cases.js");
-/* harmony import */ var _WorldMap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./WorldMap */ "./components/WorldMap.js");
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/index.js");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-
-
-
-var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__["makeStyles"])(function (theme) {
-  return {
-    paper: {
-      padding: theme.spacing(2),
-      textAlign: 'center',
-      color: theme.palette.text.secondary,
-      height: '500px'
-    }
-  };
-});
-function WorldStats() {
-  var classes = useStyles();
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], null), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    container: true,
-    spacing: 1
-  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    item: true,
-    xs: 6
-  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    className: classes.paper
-  }, __jsx(_WorldMap__WEBPACK_IMPORTED_MODULE_4__["default"], null))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    item: true,
-    xs: 6
-  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    className: classes.paper
-  }, __jsx("div", null, __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    container: true,
-    spacing: 1
-  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    item: true,
-    xs: 6
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
-    variant: "h4"
-  }, " World Stats")))), __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    container: true,
-    spacing: 1
-  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    item: true,
-    xs: 12
-  }, __jsx(_Cases__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    selectedCountry: 'ALL'
-  })), __jsx(_WorldMap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    selectedCountry: 'ALL'
-  }))))))));
 }
 
 /***/ }),
@@ -50673,21 +50721,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FworldStats&absolutePagePath=%2FUsers%2Fgapstars%2FProjects%2FnextMeetUp%2Fssrapp%2FExploreMeetup-Covid19%2Fpages%2FworldStats.js!./":
-/*!***************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FworldStats&absolutePagePath=%2FUsers%2Fgapstars%2FProjects%2FnextMeetUp%2Fssrapp%2FExploreMeetup-Covid19%2Fpages%2FworldStats.js ***!
-  \***************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fgapstars%2FProjects%2FnextMeetUp%2Fssrapp%2FExploreMeetup-Covid19%2Fpages%2Findex.js!./":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fgapstars%2FProjects%2FnextMeetUp%2Fssrapp%2FExploreMeetup-Covid19%2Fpages%2Findex.js ***!
+  \************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/worldStats", function() {
-      var mod = __webpack_require__(/*! ./pages/worldStats.js */ "./pages/worldStats.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
+      var mod = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
       if(true) {
-        module.hot.accept(/*! ./pages/worldStats.js */ "./pages/worldStats.js", function() {
-          if(!next.router.components["/worldStats"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/worldStats.js */ "./pages/worldStats.js")
-          next.router.update("/worldStats", updatedPage)
+        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
+          if(!next.router.components["/"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+          next.router.update("/", updatedPage)
         })
       }
       return mod
@@ -60527,16 +60575,16 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./pages/worldStats.js":
-/*!*****************************!*\
-  !*** ./pages/worldStats.js ***!
-  \*****************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return worldStats; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return index; });
 /* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
@@ -60544,7 +60592,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_WorldStats__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/WorldStats */ "./components/WorldStats.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
+/* harmony import */ var _components_SelectCountry__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/SelectCountry */ "./components/SelectCountry.js");
 
 
 
@@ -60559,39 +60608,40 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
-var worldStats = /*#__PURE__*/function (_Component) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(worldStats, _Component);
 
-  var _super = _createSuper(worldStats);
+var index = /*#__PURE__*/function (_Component) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(index, _Component);
 
-  function worldStats() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, worldStats);
+  var _super = _createSuper(index);
+
+  function index() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, index);
 
     return _super.apply(this, arguments);
   }
 
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(worldStats, [{
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(index, [{
     key: "render",
     value: function render() {
-      return __jsx("div", null, __jsx(_components_WorldStats__WEBPACK_IMPORTED_MODULE_6__["default"], null));
+      return __jsx("div", null, __jsx(_components_SelectCountry__WEBPACK_IMPORTED_MODULE_7__["default"], null));
     }
   }]);
 
-  return worldStats;
+  return index;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
 
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2FworldStats&absolutePagePath=%2FUsers%2Fgapstars%2FProjects%2FnextMeetUp%2Fssrapp%2FExploreMeetup-Covid19%2Fpages%2FworldStats.js ***!
-  \*******************************************************************************************************************************************************************************/
+/***/ 1:
+/*!****************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fgapstars%2FProjects%2FnextMeetUp%2Fssrapp%2FExploreMeetup-Covid19%2Fpages%2Findex.js ***!
+  \****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FworldStats&absolutePagePath=%2FUsers%2Fgapstars%2FProjects%2FnextMeetUp%2Fssrapp%2FExploreMeetup-Covid19%2Fpages%2FworldStats.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FworldStats&absolutePagePath=%2FUsers%2Fgapstars%2FProjects%2FnextMeetUp%2Fssrapp%2FExploreMeetup-Covid19%2Fpages%2FworldStats.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fgapstars%2FProjects%2FnextMeetUp%2Fssrapp%2FExploreMeetup-Covid19%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fgapstars%2FProjects%2FnextMeetUp%2Fssrapp%2FExploreMeetup-Covid19%2Fpages%2Findex.js!./");
 
 
 /***/ }),
@@ -60607,5 +60657,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=worldStats.js.map
+},[[1,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=index.js.map

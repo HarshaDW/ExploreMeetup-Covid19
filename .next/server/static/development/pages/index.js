@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -294,6 +294,136 @@ function Header() {
 
 /***/ }),
 
+/***/ "./components/SelectCountry.js":
+/*!*************************************!*\
+  !*** ./components/SelectCountry.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Dropdown; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/InputLabel */ "@material-ui/core/InputLabel");
+/* harmony import */ var _material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/MenuItem */ "@material-ui/core/MenuItem");
+/* harmony import */ var _material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/FormControl */ "@material-ui/core/FormControl");
+/* harmony import */ var _material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core_Select__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Select */ "@material-ui/core/Select");
+/* harmony import */ var _material_ui_core_Select__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _Cases__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Cases */ "./components/Cases.js");
+/* harmony import */ var _WorldMap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./WorldMap */ "./components/WorldMap.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_11__);
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+
+
+
+
+
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+    width: '100%',
+    padding: (0, 2, 0, 2)
+  },
+  selectEmpty: {
+    marginTop: theme.spacing(2)
+  },
+  dropdown: {
+    margin: theme.spacing(6)
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+    height: '500px'
+  }
+}));
+function Dropdown() {
+  const classes = useStyles();
+  const {
+    0: country,
+    1: setCountry
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('LK');
+
+  const handleChange = event => {
+    event.preventDefault();
+    setCountry(event.target.value);
+  };
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_Header__WEBPACK_IMPORTED_MODULE_10__["default"], null), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    container: true,
+    spacing: 1
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    item: true,
+    xs: 6
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_11___default.a, {
+    className: classes.paper
+  }, __jsx(_WorldMap__WEBPACK_IMPORTED_MODULE_9__["default"], null))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    item: true,
+    xs: 6
+  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_11___default.a, {
+    className: classes.paper
+  }, __jsx("div", null, __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    container: true,
+    spacing: 1
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    item: true,
+    xs: 6
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
+    variant: "h4"
+  }, " By Country"), __jsx(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    className: classes.formControl
+  }, __jsx(_material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    id: "demo-simple-select-label"
+  }, "Country"), __jsx(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    labelId: "demo-simple-select-label",
+    id: "demo-simple-select",
+    defaultValue: "LK",
+    value: country,
+    onChange: handleChange
+  }, __jsx(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    value: 'LK'
+  }, "LK"), __jsx(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    value: 'US'
+  }, "USA"), __jsx(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    value: 'IT'
+  }, "ITALY"), __jsx(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    value: 'FR'
+  }, "FRANCE")))))), __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    container: true,
+    spacing: 1
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    item: true,
+    xs: 12
+  }, __jsx(_Cases__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    selectedCountry: country
+  })), __jsx(_WorldMap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    selectedCountry: country
+  }))))))));
+}
+
+/***/ }),
+
 /***/ "./components/WorldMap.js":
 /*!********************************!*\
   !*** ./components/WorldMap.js ***!
@@ -360,84 +490,6 @@ function WorldMap({
     alignmentBaseline: "middle",
     fill: "#F53"
   }, selectedCountry ? selectedCountry.toString() : 'France'))));
-}
-
-/***/ }),
-
-/***/ "./components/WorldStats.js":
-/*!**********************************!*\
-  !*** ./components/WorldStats.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return WorldStats; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Cases__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Cases */ "./components/Cases.js");
-/* harmony import */ var _WorldMap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./WorldMap */ "./components/WorldMap.js");
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
-/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__);
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-
-
-
-const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__["makeStyles"])(theme => ({
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    height: '500px'
-  }
-}));
-function WorldStats() {
-  const classes = useStyles();
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], null), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    container: true,
-    spacing: 1
-  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    item: true,
-    xs: 6
-  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    className: classes.paper
-  }, __jsx(_WorldMap__WEBPACK_IMPORTED_MODULE_4__["default"], null))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    item: true,
-    xs: 6
-  }, __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    className: classes.paper
-  }, __jsx("div", null, __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    container: true,
-    spacing: 1
-  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    item: true,
-    xs: 6
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
-    variant: "h4"
-  }, " World Stats")))), __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    container: true,
-    spacing: 1
-  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    item: true,
-    xs: 12
-  }, __jsx(_Cases__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    selectedCountry: 'ALL'
-  })), __jsx(_WorldMap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    selectedCountry: 'ALL'
-  }))))))));
 }
 
 /***/ }),
@@ -2373,39 +2425,41 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./pages/worldStats.js":
-/*!*****************************!*\
-  !*** ./pages/worldStats.js ***!
-  \*****************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return worldStats; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return index; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_WorldStats__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/WorldStats */ "./components/WorldStats.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
+/* harmony import */ var _components_SelectCountry__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/SelectCountry */ "./components/SelectCountry.js");
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-class worldStats extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+
+class index extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
-    return __jsx("div", null, __jsx(_components_WorldStats__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+    return __jsx("div", null, __jsx(_components_SelectCountry__WEBPACK_IMPORTED_MODULE_2__["default"], null));
   }
 
 }
 
 /***/ }),
 
-/***/ 5:
-/*!***********************************!*\
-  !*** multi ./pages/worldStats.js ***!
-  \***********************************/
+/***/ 3:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/gapstars/Projects/nextMeetUp/ssrapp/ExploreMeetup-Covid19/pages/worldStats.js */"./pages/worldStats.js");
+module.exports = __webpack_require__(/*! /Users/gapstars/Projects/nextMeetUp/ssrapp/ExploreMeetup-Covid19/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -2465,6 +2519,17 @@ module.exports = require("@material-ui/core/CardContent");
 
 /***/ }),
 
+/***/ "@material-ui/core/FormControl":
+/*!************************************************!*\
+  !*** external "@material-ui/core/FormControl" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/FormControl");
+
+/***/ }),
+
 /***/ "@material-ui/core/Grid":
 /*!*****************************************!*\
   !*** external "@material-ui/core/Grid" ***!
@@ -2476,6 +2541,28 @@ module.exports = require("@material-ui/core/Grid");
 
 /***/ }),
 
+/***/ "@material-ui/core/InputLabel":
+/*!***********************************************!*\
+  !*** external "@material-ui/core/InputLabel" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/InputLabel");
+
+/***/ }),
+
+/***/ "@material-ui/core/MenuItem":
+/*!*********************************************!*\
+  !*** external "@material-ui/core/MenuItem" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/MenuItem");
+
+/***/ }),
+
 /***/ "@material-ui/core/Paper":
 /*!******************************************!*\
   !*** external "@material-ui/core/Paper" ***!
@@ -2484,6 +2571,17 @@ module.exports = require("@material-ui/core/Grid");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Paper");
+
+/***/ }),
+
+/***/ "@material-ui/core/Select":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/Select" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Select");
 
 /***/ }),
 
@@ -2598,4 +2696,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=worldStats.js.map
+//# sourceMappingURL=index.js.map
